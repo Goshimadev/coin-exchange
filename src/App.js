@@ -16,6 +16,7 @@ const Div = styled.div `
 `
 const P = styled.p`
     text-align: center;
+    margin: 2rem auto;
 `
 
 const A = styled.a`
@@ -28,7 +29,7 @@ const formatPrice = price => parseFloat(Number(price).toFixed(4));
 function App(props) {
   const [balance, setBalance] = useState(10000);
   const [showBalance, setShowBalance] = useState(false);
-  const [coinData, setCoinData] = useState([]);  
+  const [coinData, setCoinData] = useState([]);
 
   // These are the life cycles methods 
   const componentDidMount = async () => {
@@ -46,6 +47,8 @@ function App(props) {
         name:   coin.name,
         ticker: coin.symbol,
         balance: 0,
+        max_supply: coin.max_supply,
+        rank: coin.rank,
         price: formatPrice(coin.quotes.USD.price),
       };
     })

@@ -39,10 +39,12 @@ export default function Coin(props) {
 
     return (
         <tr>
+            <Td>{props.rank}</Td>
             <TdName>{props.name}</TdName>
             <Td>{props.ticker}</Td>
             <Td>${props.price}</Td>
             <Td>{props.showBalance ? props.balance : '-'}</Td>
+            <Td>{props.max_supply}</Td>
             <TdControls>
                 <form action="#" method="POST">
                     <Button className='btn btn-info' onClick={handleRefresh}>

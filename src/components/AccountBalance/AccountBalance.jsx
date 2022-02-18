@@ -9,15 +9,16 @@ const Section = styled.section`
     font-weight: 400;
     line-height: 3rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 1rem 0 2rem 0;
     display: inline-block;
 `
 const Balance = styled.div`
     min-width: 250px;
-    margin: 0.5rem 0 0 2.5rem;
+    margin: 2rem 0 0 0;
     font-size: 1.8em;
+    font-weight: 400;
     vertical-align: middle;
-    text-align: left;
+    text-align: center;
 `
 const Button = styled.button`
     margin: 0 8px;;
@@ -54,7 +55,7 @@ export default function AccountBalance(props) {
             </BalanceToggleButton>
             <Button className='btn btn-success' 
             // since the setBalance state we need is in App.js we use props to create 
-            // the function which we will write in App.js
+            // the function handleBrrr, which we will write in App.js
                     onClick={props.handleBrrr}>
                 <i className='fas fa-helicopter'></i>
             </Button>
