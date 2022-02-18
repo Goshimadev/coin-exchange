@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/coin-exchange/static/css/main.d185569e.chunk.css",
-    "main.js": "/coin-exchange/static/js/main.ad4e2f28.chunk.js",
-    "main.js.map": "/coin-exchange/static/js/main.ad4e2f28.chunk.js.map",
+    "main.js": "/coin-exchange/static/js/main.ef865cdc.chunk.js",
+    "main.js.map": "/coin-exchange/static/js/main.ef865cdc.chunk.js.map",
     "runtime-main.js": "/coin-exchange/static/js/runtime-main.4a4cd64e.js",
     "runtime-main.js.map": "/coin-exchange/static/js/runtime-main.4a4cd64e.js.map",
     "static/css/2.b5c9840e.chunk.css": "/coin-exchange/static/css/2.b5c9840e.chunk.css",
@@ -11,7 +11,7 @@
     "static/js/3.f259759d.chunk.js": "/coin-exchange/static/js/3.f259759d.chunk.js",
     "static/js/3.f259759d.chunk.js.map": "/coin-exchange/static/js/3.f259759d.chunk.js.map",
     "index.html": "/coin-exchange/index.html",
-    "precache-manifest.ab6a7e47ad88b7f233acd579ed3eff29.js": "/coin-exchange/precache-manifest.ab6a7e47ad88b7f233acd579ed3eff29.js",
+    "precache-manifest.e85ed9a0776950a9dc9fd846d2698f75.js": "/coin-exchange/precache-manifest.e85ed9a0776950a9dc9fd846d2698f75.js",
     "service-worker.js": "/coin-exchange/service-worker.js",
     "static/css/2.b5c9840e.chunk.css.map": "/coin-exchange/static/css/2.b5c9840e.chunk.css.map",
     "static/css/main.d185569e.chunk.css.map": "/coin-exchange/static/css/main.d185569e.chunk.css.map",
@@ -23,6 +23,6 @@
     "static/css/2.b5c9840e.chunk.css",
     "static/js/2.65b42825.chunk.js",
     "static/css/main.d185569e.chunk.css",
-    "static/js/main.ad4e2f28.chunk.js"
+    "static/js/main.ef865cdc.chunk.js"
   ]
 }
