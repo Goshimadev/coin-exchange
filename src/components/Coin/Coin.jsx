@@ -19,6 +19,9 @@ const Button = styled.button`
 
 export default function Coin(props) {
 
+    // in functional components we add const to our functions 
+    // because these are members of the Coin component 
+    // we don't want them to become global variables    
     const handleRefresh = (event) => {
         // Prevent the default action of submitting the form 
         event.preventDefault();

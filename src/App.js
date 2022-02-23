@@ -27,6 +27,9 @@ const COIN_COUNT = 10;
 const formatPrice = price => parseFloat(Number(price).toFixed(4));
 
 function App(props) {
+
+  // the states provide values anywhere in the application 
+  // we initialize the values with useState - and can set new ones with (setName) 
   const [balance, setBalance] = useState(10000);
   const [showBalance, setShowBalance] = useState(false);
   const [coinData, setCoinData] = useState([]);
@@ -57,6 +60,8 @@ function App(props) {
   }
 
   useEffect(() => {
+    // here we have no data yet so we do component did mount
+    // if we have data we update 
     if (coinData.length === 0) {
       componentDidMount();
     }
@@ -80,6 +85,8 @@ function App(props) {
   }
 
   const handleBalanceVisibilityChange = () => {
+    // we're negating the old value
+    // if it was false is gonna be true, if it was true is gonna be false
     setShowBalance(oldValue => !oldValue);
   }  
 
@@ -89,7 +96,8 @@ function App(props) {
     const response = await axios.get(tickerUrl);
     const newPrice = formatPrice(response.data.quotes.USD.price);
     const newCoinData = coinData.map( function ( values ) {
-      // {...values} - this clones the original data 
+      // {...values} - this clones the original data
+      //enumerates the old state (values)
       let newValues = { ...values };
       if ( valueChangeId === values.key ) {
         newValues.price = newPrice;
@@ -116,7 +124,7 @@ function App(props) {
       showBalance={showBalance} />
       <div>
       <P>Powered by <A href='https://api.coinpaprika.com/' target='_blank'>Coinpaprika</A></P>
-      <P>© 2022 - Designed by: <A href='https://github.com/dieg0san' target='_blank'>dieg0san</A></P>
+      <P>© 2022 - Designed by: <A href='https://github.com/ok-diego' target='_blank'>Diego Patino</A></P>
       </div>
     </Div>
     </>
